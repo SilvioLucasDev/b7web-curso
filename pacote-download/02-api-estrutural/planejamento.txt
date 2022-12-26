@@ -1,0 +1,35 @@
+DEVSNOTES: (Sistema de anotações simples)
+
+
+# O que o projeto precisa fazer?
+    - Listar anotações
+    - Pegar informações de uma anotação
+    - Inserir uma anotação nova
+    - Atualizar uma anotação
+    - Deletar uma anotação
+
+
+# Qual a estrutura de dados?
+    - Local para armezenar as anotações
+    -- id
+    -- title
+    -- body
+
+
+# Quais os endpoints?
+    -   URL ESTRUTURADO - (MÉTODO) / URL ? PARÂMETROS (DADOS)
+
+    - (GET)    /api/getall.php
+    - (GET)    /api/get.php?id=123
+    - (POST)   /api/insert.php     (title, body)
+    - (PUT)    /api/update.php     (id, title, body)
+    - (DELETE) /api/delete.php     (id)
+
+
+    - URL MVC - (MÉTODO) / URL / PARÂMETROS (DADOS)
+
+    - (GET)    /api/notes
+    - (GET)    /api/note/123
+    - (POST)   /api/note       (title, body)
+    - (PUT)    /api/note/123   (title, body)
+    - (DELETE) /api/note/123
