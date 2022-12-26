@@ -18,7 +18,7 @@ if ($method == 'get') {
         if ($sql->rowCount() > 0) {
             $data = $sql->fetch(PDO::FETCH_ASSOC);
 
-            $array['result'][] = [
+            $array['result'] = [
                 'id' => $data['id'],
                 'title' => $data['title']
             ];
