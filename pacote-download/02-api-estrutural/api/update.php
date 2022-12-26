@@ -24,7 +24,7 @@ if ($method == 'put') {
 
         if ($sql->rowCount() > 0) {
 
-            $sql = $pdo->prepare("UPDATE notes SET title = :titel, body = :body WHERE id = :id");
+            $sql = $pdo->prepare("UPDATE notes SET title = :title, body = :body WHERE id = :id");
             $sql->bindValue(':id', $id);
             $sql->bindValue(':title', $title);
             $sql->bindValue(':body', $body);
