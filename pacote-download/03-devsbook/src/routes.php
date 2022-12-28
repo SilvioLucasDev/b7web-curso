@@ -11,3 +11,10 @@ $router->post('/login', 'LoginController@signinAction');
 
 $router->get('/cadastro', 'LoginController@signup');
 $router->post('/cadastro', 'LoginController@signupAction');
+
+// $router->get('/pesquisar', 'LoginController@signin');
+// $router->get('/perfil', 'LoginController@signin');
+// $router->get('/sair', 'LoginController@signin');
+// $router->get('/amigos', 'LoginController@signin');
+// $router->get('/fotos', 'LoginController@signin');
+// $router->get('/config', 'LoginController@signin');
